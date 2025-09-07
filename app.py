@@ -135,6 +135,8 @@ HTML_TEMPLATE = """
     <div class="container">
         <h1>🤖 Chat with Gemini</h1>
         <form method="post">
+
+        thato
             <label for="model">Select Model:</label>
             <select name="model" id="model">
                 {% for val, name in models %}
@@ -237,3 +239,4 @@ import os
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # Use Render's PORT or fallback 5000
     app.run(host="0.0.0.0", port=port, debug=True)
+
